@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 62.25%;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: rgb(72, 61, 139);
+}
+
+.title{
+    font-size: 6em;
+    color:rgb(248, 248, 250);
+    text-decoration: underline;
+    text-align: center;
+    margin: 0.8em 0;
+}
+
+.subtitle{
+    font-size: 5em;
+    color: rgb(248, 248, 250);
+    text-decoration: underline;
+    margin-left: 1em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+    font-size: 3em;
+}
+
+form label{
+    font-size: 1.2em;
+    color: rgb(248, 248, 250);
+}
+form input{
+    font-size: 0.9em;
+    text-align: center;
+    width: 18em;
+    margin-bottom: 0.4em;
+}
+
+.ingresar:hover{
+    background-color: rgba(187, 184, 212, 0.5);
+    color: rgb(248, 248, 250);
+    border: 1px solid rgb(248, 248, 250);
+}
+
+.list li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 6em;
+    padding: 1em;
+    color: rgb(248, 248, 250);
+}
+
+.name{
+    padding: 0.6em;
+}
+
+.first-note, .second-note, .third-note, .prom{
+    border-left: 2px solid rgb(248, 248, 250);
+    padding: 0.6em;
+}
+
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 5em;
+    margin: 1em;
+}

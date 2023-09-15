@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pre-entrega 1</title>
+</head>
+<body>
+    <h1 class="title">Lista de alumnos</h1>
+    <h2 class="subtitle">Datos del alumno</h2>
+    <form id="alumno-form">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" placeholder="Ingrese nombre del alumno" required>
+        <label for="nota-1">Nota del primer trimestre</label>
+        <input type="number" id="nota-1" placeholder="Ingrese nota del primer trimestre" required>
+        <label for="nota-2">Nota del segundo trimestre</label>
+        <input type="number" id="nota-2" placeholder="Ingrese nota del segundo trimestre" required>
+        <label for="nota-3">Nota del tercer trimestre</label>
+        <input type="number" id="nota-3" placeholder="Ingrese nota del tercer trimestre" required>
+        <input class="ingresar" type="submit" value="Ingresar">
+    </form>
+    <ul class="list">
+        <li>
+            <div class="name">Nombre</div>
+            <div class="first-note">1er Trimestre</div>
+            <div class="second-note">2do Trimestre</div>
+            <div class="third-note">3er Trimestre</div>
+            <div class="prom">Promedio</div>
+        </li>
+    </ul>
+    <div class="btn">
+        <button id="aprobados">Aprobados</button>
+        <button id="desaprobados">Desaprobados</button>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
