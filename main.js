@@ -120,9 +120,46 @@ desaprobadosButton.addEventListener("click", function () {
     mostrarListaPorCondicion(false);
 });
 
-// Recuperar datos almacenados en el Local Storage
+// Recupera datos almacenados en el Local Storage
 for (let i = 0; i < localStorage.length; i++) {
     const key = localStorage.key(i);
     const alumnoData = JSON.parse(localStorage.getItem(key));
     agregarAlumno(alumnoData.nombre, alumnoData.nota1, alumnoData.nota2, alumnoData.nota3);
 }
+
+const url = './alumnos.json'
+
+fetch(url) 
+  .then(response => response.json())
+  .then(data => {
+    const alumnosData = data.Alumnos; 
+    const listaAlumnos = document.getElementById('listaAlumnos'); 
+
+    const tabla = document.querySelector('#tablaAlumnos')
+
+    tabla.classList.add('tabla-alumnos')
+
+    const cabecera = document.createElement('thead');
+    cabecera.innerHTML = `
+      <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>DNI</th>
+      </tr>
+    `;
+    tabla.appendChild(cabecera);
+
+    const cuerpo = document.createElement('tbody');
+    for (const alumnoData of alumnosData) {
+      const fila = document.createElement('tr');
+      fila.innerHTML = `
+        <td>${alumnoData.Nombre}</td>
+        <td>${alumnoData.Apellido}</td>
+        <td>${alumnoData.DNI}</td>
+      `;
+      cuerpo.appendChild(fila);
+    }
+    tabla.appendChild(cuerpo);
+
+    listaAlumnos.appendChild(tabla);
+  })

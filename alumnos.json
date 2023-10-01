@@ -1,0 +1,54 @@
+{
+  "Alumnos": [
+    {
+      "Nombre": "Juan",
+      "Apellido": "Pérez",
+      "DNI": "12345678"
+    },
+    {
+      "Nombre": "María",
+      "Apellido": "González",
+      "DNI": "23456789"
+    },
+    {
+      "Nombre": "Carlos",
+      "Apellido": "López",
+      "DNI": "34567890"
+    },
+    {
+      "Nombre": "Ana",
+      "Apellido": "Martínez",
+      "DNI": "45678901"
+    },
+    {
+      "Nombre": "Luis",
+      "Apellido": "Sánchez",
+      "DNI": "56789012"
+    },
+    {
+      "Nombre": "Laura",
+      "Apellido": "Rodríguez",
+      "DNI": "67890123"
+    },
+    {
+      "Nombre": "Pedro",
+      "Apellido": "Fernández",
+      "DNI": "78901234"
+    },
+    {
+      "Nombre": "Isabel",
+      "Apellido": "Gómez",
+      "DNI": "89012345"
+    },
+    {
+      "Nombre": "Miguel",
+      "Apellido": "Lara",
+      "DNI": "90123456"
+    },
+    {
+      "Nombre": "Carmen",
+      "Apellido": "Torres",
+      "DNI": "01234567"
+    }
+  ]
+}
